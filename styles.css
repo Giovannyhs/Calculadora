@@ -4,9 +4,7 @@
 body {
   margin: 0;
 }
-#label_toggle {
-  color: black;
-}
+
 .container {
   display: flex;
   justify-content: center;
@@ -64,4 +62,6 @@ button:active {
 }
 #valor_guardado {
   font-size: 1.5rem;
+}
+@media screen {
 }
