@@ -1,0 +1,67 @@
+* {
+  color: #fff;
+}
+body {
+  margin: 0;
+}
+#label_toggle {
+  color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculadora {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 80vh;
+  width: 30vw;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 15px 10px 5px 5px #00000040;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 77, 126, 0.8015581232492998) 2%,
+    rgba(27, 27, 122, 1) 67%
+  );
+}
+button {
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: rgba(37, 34, 212, 0.301);
+  box-shadow: 10px 5px #00000060;
+}
+button:active {
+  background-color: rgb(5, 5, 216);
+}
+
+.grid-2 {
+  grid-column: span 2;
+  font-size: 2em;
+}
+.back {
+  font-size: 2em;
+}
+.display {
+  grid-column: 1 /-1;
+  padding: 18px;
+  display: flex;
+  margin: 10px 10px 20px;
+  flex-direction: column;
+  background-color: rgb(1, 1, 75);
+  border-radius: 25px;
+  text-align: right;
+  justify-content: space-between;
+  box-shadow: 0 0 0 8px #00000060;
+}
+#valor_ingresado {
+  font-size: 2rem;
+}
+#valor_guardado {
+  font-size: 1.5rem;
+}
