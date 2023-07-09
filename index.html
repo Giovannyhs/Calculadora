@@ -6,27 +6,26 @@
     <title>Calculadora</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
-      integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="but_toggle">
-      <button class="toggle">
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+    <button class="toggle">
+      <div id="sun" class="icon"><i class="fa-solid fa-sun"></i></div>
+      <div id="moon" class="icon"><i class="fa-solid fa-moon"></i></div>
+    </button>
+
     <div class="container">
       <div class="calculadora">
         <div class="display">
-          <div id="valor_guardado">000</div>
-          <div id="valor_ingresado">000</div>
+          <div id="valor_guardado"></div>
+          <div id="valor_ingresado"></div>
         </div>
-        <button class="grid-2">c</button>
+        <button class="grid-2 limpiar">c</button>
         <button class="back">←</button>
         <button class="operador">/</button>
         <button class="numero">7</button>
@@ -42,8 +41,8 @@
         <button class="numero">3</button>
         <button class="operador">+</button>
         <button class="grid-2 numero">0</button>
-        <button class="numero">.</button>
-        <button class="operador">=</button>
+        <button class="numero punto">.</button>
+        <button class="operador_igual">=</button>
       </div>
     </div>
     <script src="script.js"></script>

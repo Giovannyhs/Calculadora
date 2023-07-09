@@ -4,6 +4,25 @@
 body {
   margin: 0;
 }
+.toggle {
+  display: flex;
+  width: 70px;
+  justify-content: space-around;
+}
+#sun i {
+  color: yellow;
+}
+#moon i {
+  color: gray;
+}
+
+.toggle #moon:hover ~ #sun i {
+  color: transparent;
+}
+
+.toggle #sun:hover ~ #moon i {
+  color: transparent;
+}
 
 .container {
   display: flex;
@@ -13,17 +32,15 @@ body {
 }
 .calculadora {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5em;
   height: 80vh;
   width: 30vw;
-  padding: 15px;
+  padding: 25px;
   border-radius: 30px;
-  box-shadow: 15px 10px 5px 5px #00000040;
-  background: linear-gradient(
-    180deg,
-    rgba(28, 77, 126, 0.8015581232492998) 2%,
-    rgba(27, 27, 122, 1) 67%
-  );
+  box-shadow: 8px 8px 5px 5px #00000040;
+  /*background-color: #013253;*/
+  background: #021926;
 }
 button {
   cursor: pointer;
@@ -31,11 +48,12 @@ button {
   border-radius: 30px;
   font-size: 1.5rem;
   border: none;
-  background-color: rgba(37, 34, 212, 0.301);
-  box-shadow: 10px 5px #00000060;
+  /* background: #021926;*/
+  background-color: #013253;
+  box-shadow: 8px 6px #00000037;
 }
 button:active {
-  background-color: rgb(5, 5, 216);
+  background-color: rgba(50, 50, 57, 0.689);
 }
 
 .grid-2 {
@@ -47,21 +65,25 @@ button:active {
 }
 .display {
   grid-column: 1 /-1;
-  padding: 18px;
+  height: 19vh;
   display: flex;
-  margin: 10px 10px 20px;
+  margin: 15px 10px 1px;
   flex-direction: column;
-  background-color: rgb(1, 1, 75);
+  background-color: #0000008e;
   border-radius: 25px;
   text-align: right;
   justify-content: space-between;
-  box-shadow: 0 0 0 8px #00000060;
+  box-shadow: 0 0 0 8px #000000;
 }
 #valor_ingresado {
-  font-size: 2rem;
+  font-size: 3rem;
+  margin-right: 25px;
+  margin-bottom: 15px;
 }
 #valor_guardado {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-right: 25px;
+  margin-top: 15px;
 }
 @media screen {
 }
