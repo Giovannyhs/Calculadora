@@ -1,29 +1,50 @@
-* {
-  color: #fff;
-}
 body {
   margin: 0;
 }
-.toggle {
+.toggle_dia {
+  background-color: #3494b1;
   display: flex;
-  width: 70px;
-  justify-content: space-around;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  cursor: pointer;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
 }
-#sun i {
-  color: yellow;
+.toggle_dia span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+  background: none;
 }
-#moon i {
-  color: gray;
+.toggle_dia::after {
+  display: block;
+  background: #fffbf5;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.5);
+  content: "";
 }
-
-.toggle #moon:hover ~ #sun i {
-  color: transparent;
+.toggle_dia.activado {
+  background: #fdd384;
 }
-
-.toggle #sun:hover ~ #moon i {
-  color: transparent;
+.toggle_dia.activado::after {
+  left: unset;
+  right: 0;
 }
-
+body.dark {
+  background: #222;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -39,7 +60,6 @@ body {
   padding: 25px;
   border-radius: 30px;
   box-shadow: 8px 8px 5px 5px #00000040;
-  /*background-color: #013253;*/
   background: #021926;
 }
 button {
@@ -48,7 +68,6 @@ button {
   border-radius: 30px;
   font-size: 1.5rem;
   border: none;
-  /* background: #021926;*/
   background-color: #013253;
   box-shadow: 8px 6px #00000037;
 }

@@ -7,11 +7,18 @@ const botonIgual = document.querySelector(".operador_igual");
 const botonLimpiar = document.querySelector(".limpiar");
 const botonBorrar = document.querySelector(".back");
 const punto = document.querySelector(".punto");
+const toggleButton = document.getElementById("toggle");
 
 let operador = "";
 let valorActual = "";
 let valorAnterior = null;
 let operacionRealizada = false;
+
+// funcion para cambiar de dia a noche
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  toggleButton.classList.toggle("activado");
+});
 
 // Función para actualizar el valor mostrado en la calculadora
 function actualizarDisplay() {
@@ -21,7 +28,7 @@ function actualizarDisplay() {
   limitPoint();
 }
 
-// Función para realizar la operación matemática
+// Función para realizar la operaciónes
 function realizarOperacion() {
   const anterior = parseFloat(valorAnterior);
   const actual = parseFloat(valorActual);
