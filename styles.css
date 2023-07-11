@@ -106,5 +106,40 @@ button:active {
   margin-right: 25px;
   margin-top: 15px;
 }
-@media screen {
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+  .calculadora {
+    width: 50%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .calculadora {
+    width: 50%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .calculadora {
+    width: 60%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+  }
+  .calculadora {
+    width: 70%;
+    height: 70%;
+  }
 }
